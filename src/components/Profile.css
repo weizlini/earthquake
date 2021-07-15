@@ -1,0 +1,24 @@
+.profile-view {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.profile-view th {
+  text-align: left;
+  font-size: 18px;
+  padding-right: 40px;
+  white-space: nowrap;
+  vertical-align: top;
+  padding-bottom: 5px;
+}
+.profile-view td {
+  font-weight: bold;
+  font-size: 18px;
+  color: #777;
+}
+.avatar {
+  width: 183px;
+  height: 183px;
+  margin-right: 16px;
+}
