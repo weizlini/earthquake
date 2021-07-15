@@ -11,7 +11,6 @@
     "phone": "01-343-989-2345",
     "email": "sw@nowhere.ic.kp",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
-
   },
   "data": {
     "type": "FeatureCollection",
@@ -56,11 +55,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -122.7304993,
-            38.7903328,
-            1.22
-          ]
+          "coordinates": [-122.7304993, 38.7903328, 1.22]
         },
         "id": "nc72999021"
       },
@@ -96,11 +91,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -116.7931667,
-            33.5168333,
-            5.69
-          ]
+          "coordinates": [-116.7931667, 33.5168333, 5.69]
         },
         "id": "ci38148464"
       },
@@ -136,11 +127,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -152.9665,
-            59.6595,
-            102.5
-          ]
+          "coordinates": [-152.9665, 59.6595, 102.5]
         },
         "id": "ak19233683"
       },
@@ -176,11 +163,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -118.9815,
-            38.0482,
-            13
-          ]
+          "coordinates": [-118.9815, 38.0482, 13]
         },
         "id": "nn00630289"
       },
@@ -216,11 +199,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -151.3919,
-            59.8471,
-            163.6
-          ]
+          "coordinates": [-151.3919, 59.8471, 163.6]
         },
         "id": "ak19233673"
       },
@@ -256,11 +235,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            145.8313,
-            43.208,
-            42.74
-          ]
+          "coordinates": [145.8313, 43.208, 42.74]
         },
         "id": "us2000dzwr"
       },
@@ -296,11 +271,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -116.7943333,
-            33.5123333,
-            4.65
-          ]
+          "coordinates": [-116.7943333, 33.5123333, 4.65]
         },
         "id": "ci38148440"
       },
@@ -336,11 +307,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -146.6562,
-            61.497,
-            31
-          ]
+          "coordinates": [-146.6562, 61.497, 31]
         },
         "id": "ak19233602"
       },
@@ -376,22 +343,11 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [
-            -158.1586,
-            64.3882,
-            6.9
-          ]
+          "coordinates": [-158.1586, 64.3882, 6.9]
         },
         "id": "ak19233598"
       }
     ],
-    "bbox": [
-      -158.1586,
-      33.5123333,
-      1.22,
-      145.8313,
-      64.3882,
-      163.6
-    ]
+    "bbox": [-158.1586, 33.5123333, 1.22, 145.8313, 64.3882, 163.6]
   }
-};
+}
