@@ -4,7 +4,7 @@
   "description": "Earthquake Zen Garden",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf build; webpack build --config webpack.prod.config.js --mode production",
+    "build": "rm -rf build; mkdir build; cp public/data.json build; webpack build --config webpack.prod.config.js --mode production",
     "start": "webpack serve --config webpack.dev.config.js --mode development --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
