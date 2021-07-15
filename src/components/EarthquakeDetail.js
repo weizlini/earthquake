@@ -22,12 +22,18 @@ const EarthquakeDetail = () => {
     <>
       {detail && (
         <div className={"detail-view"}>
-          <h2>{detail.place}</h2>
+          <h2>
+            {`M ${detail.mag.toFixed(1)} - `}
+            {detail.place}
+          </h2>
           <table>
             <tbody>
               <tr>
                 <th>Title</th>
-                <td>{detail.place}</td>
+                <td>
+                  {`M ${detail.mag.toFixed(1)} - `}
+                  {detail.place}
+                </td>
               </tr>
               <tr>
                 <th>Magnitude</th>
