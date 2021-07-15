@@ -1,13 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./public"),
-    publicPath: "/",
+    path: path.resolve(__dirname, "./build"),
   },
   module: {
     rules: [
@@ -20,12 +19,9 @@ module.exports = {
         test: /\.html$/,
         use: "html-loader",
       },
-      /*Choose only one of the following two: if you're using
-      plain CSS, use the first one, and if you're using a
-      preprocessor, in this case SASS, use the second one*/
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -36,13 +32,11 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, "./public", "index.html"),
+      filename: path.resolve(__dirname, "./build", "index.html"),
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[name].css",
+    }),
   ],
-  devServer: {
-    contentBase: path.resolve(__dirname, "./public"),
-    hot: true,
-    open: true,
-    historyApiFallback: true,
-  },
 };
