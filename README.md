@@ -1,4 +1,4 @@
-# Earthquake Zen Garden Demo
+# Earthquake Demo
 ## Installation
 ```
 npm install
