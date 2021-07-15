@@ -1,0 +1,14 @@
+.detail-view {
+  width: 600px;
+  display: block;
+}
+.detail-view th {
+  text-align: left;
+  font-size: 18px;
+  padding-right: 40px;
+}
+.detail-view td {
+  font-weight: bold;
+  font-size: 18px;
+  color: #777;
+}

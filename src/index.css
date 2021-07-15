@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  color: #000;
+  color: #444;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -12,6 +12,12 @@ h1 {
   font-size: 42px;
   color: #777777;
 }
+h2 {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
 a {
   color: #0011bb;
 }
@@ -20,8 +26,12 @@ a:visited {
 }
 main {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   min-height: calc(100vh - 100px);
+  padding-top: 30px;
+}
+table {
+  border-spacing: 0;
 }

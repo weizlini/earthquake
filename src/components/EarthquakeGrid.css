@@ -1,0 +1,12 @@
+.grid {
+  width: 600px;
+}
+.grid th {
+  font-weight: normal;
+}
+.grid th span {
+  cursor: pointer;
+}
+.grid td {
+  font-weight: bold;
+}
