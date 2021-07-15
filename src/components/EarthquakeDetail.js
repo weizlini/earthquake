@@ -35,7 +35,7 @@ const EarthquakeDetail = () => {
               </tr>
               <tr>
                 <th>Time</th>
-                <td>{formatDate(detail.time)}</td>
+                <td>{formatDate(detail.time)} test</td>
               </tr>
               <tr>
                 <th>Status</th>
