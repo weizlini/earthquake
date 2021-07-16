@@ -1,13 +1,16 @@
 const path = require("path");
-const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "[name][fullhash].bundle.js",
+    filename: "[name].[fullhash].bundle.js",
     path: path.resolve(__dirname, "./build"),
   },
+  optimization: {
+    usedExports: true,
+  },
+  mode: "production",
   module: {
     rules: [
       {
@@ -35,7 +38,7 @@ module.exports = {
       filename: path.resolve(__dirname, "./build", "index.html"),
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].[hash].css",
+      filename: "[name].[fullhash].css",
       chunkFilename: "[name].css",
     }),
   ],

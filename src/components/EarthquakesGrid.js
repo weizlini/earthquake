@@ -15,11 +15,9 @@ const EarthquakesGrid = () => {
     }
   }, [data]);
   useEffect(() => {
-    console.log("sort changed");
     if (earthquakes.length) {
       const sortedEarthquakes = [...earthquakes];
       sortedEarthquakes.sort((a, b) => {
-        console.log(a.properties[sortColumn]);
         if (typeof a.properties[sortColumn] === "string")
           return sortDesc
             ? b.properties[sortColumn] > a.properties[sortColumn]
@@ -36,7 +34,6 @@ const EarthquakesGrid = () => {
           ? b.properties[sortColumn] - a.properties[sortColumn]
           : a.properties[sortColumn] - b.properties[sortColumn];
       });
-      console.log(sortedEarthquakes);
       setEarthquakes(sortedEarthquakes);
     }
   }, [sortColumn, sortDesc]);
