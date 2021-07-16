@@ -10,7 +10,6 @@ const EarthquakesGrid = () => {
   const [sortDesc, setSortDesc] = useState(false);
   useEffect(() => {
     if (data) {
-      //console.log(data.data.features);
       setEarthquakes(data.data.features);
     }
   }, [data]);
